@@ -1,7 +1,7 @@
 export default {
 	cmd: 'sun',
 	help: 'sun <location> - Checks the sun rise/set',
-	async script(args, env, tools){
+	async script(args, ufo, tools){
 		const {axios} = tools;
 		const location = args[0] ? args.join(" ") : 'Munich';
 		const format = '%l:+%S+%s\n';//args[args.length - 1] || 3;
