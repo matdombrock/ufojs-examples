@@ -1,5 +1,5 @@
 export default {
-	cmd: 'ut',
+	cmd: 'user-test',
 	async script(args, ufo, tools){
 		const {prompt} = tools;
 		console.log('ut');
